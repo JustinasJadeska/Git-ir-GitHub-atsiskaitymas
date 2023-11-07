@@ -2,9 +2,3 @@
 
 
 
-@media (min-width: 768px) {
-    #navigation > nav ul li:hover {
-        cursor: pointer;
-        background-color: rgb(205, 205, 205);
-    }
-}

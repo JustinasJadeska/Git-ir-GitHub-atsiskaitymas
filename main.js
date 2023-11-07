@@ -1,7 +1,3 @@
-const intro = document.querySelector('#intro-link')
-const work = document.querySelector('#work-link')
-const about = document.querySelector('#about-link')
-const contact = document.querySelector('#contact-link')
 
 const windowIntro = document.querySelector('#window-intro');
 const windowWork = document.querySelector('#window-work');
@@ -19,22 +15,30 @@ function showWindow(windowSection){
 
     windowSection.style.display = 'block';
 }
-
-intro.addEventListener('click', function(){
+document
+    .querySelector('#intro-link')
+    .addEventListener('click', () => {
         showWindow(windowIntro);   
 });
 
-work.addEventListener('click', function(){
-        showWindow(windowWork); 
+document
+    .querySelector('#work-link')
+    .addEventListener('click', () => {
+        showWindow(windowWork);   
 });
 
-about.addEventListener('click', function(){
-        showWindow(windowAbout);
+document
+    .querySelector('#about-link')
+    .addEventListener('click', () => {
+        showWindow(windowAbout);   
 });
 
-contact.addEventListener('click', function(){
-        showWindow(windowContact);
+document
+    .querySelector('#contact-link')
+    .addEventListener('click', () => {
+        showWindow(windowContact);   
 });
+
 
 const closeIntro = document.querySelector('#close-intro');
 const closeWork = document.querySelector('#close-work');

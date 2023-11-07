@@ -61,7 +61,9 @@ body {
 
 @media (min-width: 768px) {
     .intro {
-        margin: 0 50px;
+        width: 50%;
+        height: auto;
+        margin: auto;
         padding: 30px;
         background-color: rgba(0, 0, 0, 0.509);
     }
@@ -69,5 +71,11 @@ body {
     .intro > video {
         width: 100%;
         height: 50%;
+    }
+
+    .intro > p {
+        color: white;
+        line-height: 160%;
+        font-size: 14px;
     }
 }

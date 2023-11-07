@@ -12,13 +12,8 @@ header {
     height: 650px;
 }
 
-/* header {
-    content: "";
-    background-image: url('./Images/bg-overlay.png');
-    background-color: rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    width: 100%;
-} */
+<<<<<<<<< Temporary merge branch 1
+
 
 #container {
     display: flex;
@@ -192,6 +187,10 @@ ul > li > a {
     li:hover {
         background-color: rgba(207, 207, 207, 0.591);
         cursor: pointer;
+<<<<<<<<< Temporary merge branch 1
+=========
+        color: rgb(64, 64, 231);
+>>>>>>>>> Temporary merge branch 2
     }
 
     #text > p > a:hover {

@@ -12,9 +12,10 @@ header {
     height: 650px;
 }
 
-/* header::before {
+/* /* header {
     content: "";
     background-image: url('./Images/bg-overlay.png');
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -184,14 +185,10 @@ ul > li > a {
         border-top-right-radius: 3px;
     }
 
-    ul > li > a {
-        text-decoration: none;
-        color: white;
-    }
-
-    #text > p > a:hover {
+    li:hover {
+        background-color: grey;
         cursor: pointer;
-        color: rgb(64, 64, 231);
+        color: blue;
     }
 
 }

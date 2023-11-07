@@ -1,1 +1,10 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+
+
+@media (min-width: 768px) {
+    #navigation > nav ul li:hover {
+        cursor: pointer;
+        background-color: rgb(205, 205, 205);
+    }
+}

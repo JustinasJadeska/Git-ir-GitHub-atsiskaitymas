@@ -1,14 +1,53 @@
-const introMenu = document.querySelector('#navigation li a[href=""]');
-const windowSection = document.querySelector('#window');
+const intro = document.querySelector('#intro-link')
+const work = document.querySelector('#work-link')
+const about = document.querySelector('#about-link')
+const contact = document.querySelector('#contact-link')
 
-function showWindow(){
+const windowIntro = document.querySelector('#window-intro');
+const windowWork = document.querySelector('#window-work');
+const windowAbout = document.querySelector('#window-about');
+const windowContact = document.querySelector('#window-contact');
+
+const headerContainer = document.querySelector('header');
+
+function showWindow(windowSection){
+    headerContainer.style.display = 'none';
+    windowIntro.style.display = 'none';
+    windowWork.style.display = 'none';
+    windowAbout.style.display = 'none';
+    windowContact.style.display = 'none';
+
     windowSection.style.display = 'block';
 }
 
-introMenu.addEventListener('keydown', function(event){
+intro.addEventListener('keydown', function(event){
     if (event.key === 'Tab'){
-    event.preventDefault();
+    
     } else if (event.key === 'Enter'){
-        showWindow();
+        showWindow(windowIntro);
+    }  
+});
+
+work.addEventListener('keydown', function(event){
+    if (event.key === 'Tab'){
+    
+    } else if (event.key === 'Enter'){
+        showWindow(windowWork);
+    }  
+});
+
+about.addEventListener('keydown', function(event){
+    if (event.key === 'Tab'){
+    
+    } else if (event.key === 'Enter'){
+        showWindow(windowAbout);
+    }  
+});
+
+contact.addEventListener('keydown', function(event){
+    if (event.key === 'Tab'){
+    
+    } else if (event.key === 'Enter'){
+        showWindow(windowContact);
     }  
 });

@@ -20,34 +20,43 @@ function showWindow(windowSection){
     windowSection.style.display = 'block';
 }
 
-intro.addEventListener('keydown', function(event){
-    if (event.key === 'Tab'){
-    
-    } else if (event.key === 'Enter'){
-        showWindow(windowIntro);
-    }  
+intro.addEventListener('click', function(){
+        showWindow(windowIntro);   
 });
 
-work.addEventListener('keydown', function(event){
-    if (event.key === 'Tab'){
-    
-    } else if (event.key === 'Enter'){
-        showWindow(windowWork);
-    }  
+work.addEventListener('click', function(){
+        showWindow(windowWork); 
 });
 
-about.addEventListener('keydown', function(event){
-    if (event.key === 'Tab'){
-    
-    } else if (event.key === 'Enter'){
+about.addEventListener('click', function(){
         showWindow(windowAbout);
-    }  
 });
 
-contact.addEventListener('keydown', function(event){
-    if (event.key === 'Tab'){
-    
-    } else if (event.key === 'Enter'){
+contact.addEventListener('click', function(){
         showWindow(windowContact);
-    }  
+});
+
+const closeIntro = document.querySelector('#close-intro');
+const closeWork = document.querySelector('#close-work');
+const closeAbout = document.querySelector('#close-about');
+const closeContact = document.querySelector('#close-contact');
+
+closeIntro.addEventListener('click', function(){
+    windowIntro.style.display = 'none';
+    headerContainer.style.display = 'block';
+});
+
+closeWork.addEventListener('click', function(){
+    windowWork.style.display = 'none';
+    headerContainer.style.display = 'block';
+});
+
+closeAbout.addEventListener('click', function(){
+    windowAbout.style.display = 'none';
+    headerContainer.style.display = 'block';
+});
+
+closeContact.addEventListener('click', function(){
+    windowContact.style.display = 'none';
+    headerContainer.style.display = 'block';
 });

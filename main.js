@@ -1,8 +1,14 @@
 const introMenu = document.querySelector('#navigation li a[href=""]');
 const windowSection = document.querySelector('#window');
 
-introMenu.addEventListener('click', function(event){
-    event.preventDefault();
-
+function showWindow(){
     windowSection.style.display = 'block';
-})
+}
+
+introMenu.addEventListener('keydown', function(event){
+    if (event.key === 'Tab'){
+    event.preventDefault();
+    } else if (event.key === 'Enter'){
+        showWindow();
+    }  
+});

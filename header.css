@@ -105,5 +105,93 @@ ul > li > a {
 }
 
 @media (min-width: 768px){
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.379),
+        rgba(0, 0, 0, 0.338)), url('/Atsiskaitymas/Images/bg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 715px;
+    }
     
+    #logo {
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        margin-top: 140px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 20px;
+    }    
+
+    #text > h1 {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        border-top: 1px solid white;
+        padding: 24px 0;
+        margin: 0;
+        letter-spacing: 3px;
+        width: 100%;
+    }
+    
+    #text > p {
+        color: white;
+        padding: 0 0 24px 0;
+        text-align:justify;
+        line-height: 160%;
+        font-size: 12px;
+        border-bottom: 1px solid white;
+        margin: 0;
+        width: 100%;
+    }
+
+    .line {
+        border: 1px solid white;
+        height: 35px;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul > li {
+        list-style-type: none;
+        padding: 10px 30px;
+        font-size: 12px;
+        border: 1px solid white;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    ul > li:first-of-type {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 0;
+    }
+    
+    ul > li:last-of-type {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    ul > li > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #text > p > a:hover {
+        cursor: pointer;
+        color: blue;
+    }
+
 }

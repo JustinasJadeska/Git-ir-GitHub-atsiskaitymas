@@ -48,6 +48,11 @@ body {
     height: 20px;
 }
 
+.intro > img {
+    width: 100%;
+    height: auto;
+}
+
 @media (min-width: 768px) {
     .intro {
         margin: 0 50px;

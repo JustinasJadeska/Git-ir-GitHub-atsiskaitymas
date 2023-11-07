@@ -12,9 +12,6 @@ header {
     height: 650px;
 }
 
-<<<<<<<<< Temporary merge branch 1
-
-
 #container {
     display: flex;
     flex-direction: column;
@@ -187,10 +184,8 @@ ul > li > a {
     li:hover {
         background-color: rgba(207, 207, 207, 0.591);
         cursor: pointer;
-<<<<<<<<< Temporary merge branch 1
-=========
         color: rgb(64, 64, 231);
->>>>>>>>> Temporary merge branch 2
+
     }
 
     #text > p > a:hover {

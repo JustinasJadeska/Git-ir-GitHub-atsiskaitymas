@@ -1,0 +1,62 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#window {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.379),
+    rgba(0, 0, 0, 0.338)), url('/Atsiskaitymas/Images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.509);
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon > h3 {
+    color: white;
+    letter-spacing: 3px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+}
+
+.intro > video {
+    width: 100%;
+    height: auto;
+}
+
+.intro > p {
+    color: white;
+    line-height: 160%;
+    font-size: 14px;
+}
+
+.icon > img {
+    position:relative;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 768px) {
+    .intro {
+        margin: 0 50px;
+        padding: 30px;
+        background-color: rgba(0, 0, 0, 0.509);
+    }
+
+    .intro > video {
+        width: 100%;
+        height: 50%;
+    }
+}

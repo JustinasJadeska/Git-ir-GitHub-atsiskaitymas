@@ -158,8 +158,14 @@ ul > li > a {
         width: 100%;
     }
 
+    nav {
+        padding-left: 24px;
+    }
+
     ul {
         display: flex;
+        padding: 0;
+        margin: 0;
     }
 
     ul > li {
@@ -184,9 +190,12 @@ ul > li > a {
     }
 
     li:hover {
-        background-color: grey;
+        background-color: rgba(207, 207, 207, 0.591);
         cursor: pointer;
-        color: blue;
     }
 
+    #text > p > a:hover {
+        color: rgb(77, 124, 255);
+        border-bottom: 1px dotted rgb(77, 124, 255);
+    }
 }
